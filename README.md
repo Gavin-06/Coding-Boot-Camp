@@ -1,2 +1,2 @@
 # Coding-Boot-Camp]
-This is my repo for the coding boot camp
+This repository is where I will be posting all of the exersises and projects for the FrameworkTelevision Coding Boot Camp.
