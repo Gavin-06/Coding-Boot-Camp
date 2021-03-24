@@ -5,38 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alto Cinco Page 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kiwi+Maru&family=New+Tegomin&family=Noto+Sans+JP:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
         #row{
             display:flex;
         }
         #column1{
             flex:50%;
-            padding: 10px;
-            height: 800px; 
-            background-color:#aaa;
+            padding-right: 15px;
+            padding-left: 50px;
+            height: 1200px; 
         }
         #column2{
             flex:50%;
-            padding: 10px;
-            height: 800px;
-            background-color:#bbb;
+            padding-right: 50px;
+            padding-left: 15px;
+            height: 1200px;
+        }
+        #links{
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: rgb(105, 66, 66);
+        }
+        #footer{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 100px;
         }
         .option{
+            font-family: 'New Tegomin', serif;
             font-size: 1.5em;
+            color:indigo;
         }
         .tblheading{
-
+            font-family: 'Kiwi Maru', serif;
+            font-size: 3em;
+            color:olivedrab;
         }
-        th{
-
+        h1{
+            font-family: 'Dela Gothic One', cursive;
+            text-align: center;
         }
         td{
-
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 1.2em;
+        }
+        a:link{
+            color: blue;
+            text-decoration: underline;
+        }
+        a:hover{
+            color: black;
+            text-decoration:underline;
+        }
+        a:active{
+            color:darkolivegreen;
+            text-decoration: line-through;
+        }
+        a:visited{
+            color:rgb(124, 156, 218);
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <div id="container">
+        <div id="links">
+            <nav>
+                <p><a href="Page 1.html">Menu Page 1</a> | <a href="Page 3.html">Menu Page 3</a> | <a href="Page 4.html">Menu Page 4</a></p>
+            </nav>
+        </div><!--links-->
+        <h1>Alto Cinco Menu Page 2</h1>
     <div id="row">
         <div id="column1">
             <table>
@@ -210,14 +252,8 @@
             </table><!--tbl 1-->
         </div><!--column2-->
     </div><!--row-->
-    <div id="links">
-        <p><a href="Page 1.html">Menu Page 1</a></p>
-        <p><a href="Page 2.html">Menu Page 2</a></p>
-        <p><a href="Page 3.html">Menu Page 3</a></p>
-        <p><a href="Page 4.html">Menu Page 4</a></p>
-    </div><!--links-->
     <div id="footer">
-
+        <p>Copywright 2021 | Alto Cinco</p>
     </div><!--footer-->
     </div><!--container-->
 </body>
