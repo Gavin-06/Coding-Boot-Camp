@@ -4,14 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Every Pizza Place</title>
+    <style>
+        h1{
+            color:rgb(200, 0, 0);
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        h2{
+            color:rgb(200, 0, 0);
+            font-family: 'Roboto', sans-serif;
+
+        }
+        legend{
+            font-family: 'Roboto Slab', serif;
+            text-align: center;
+        }
+        label{
+            font-size: 1.2em;
+            font-family: 'Roboto Slab', serif;
+        }
+        input{
+            font-size: 1.2em;
+            color:red;
+            margin-bottom: 10px;
+            font-family: 'Roboto Slab', serif;
+        }
+        select{
+            font-family: 'Roboto Slab', serif;
+            color: rgb(200, 0, 0);
+        }
+        button{
+            margin-top: 10px;
+            width: 220px;
+            background-color: yellow;
+            font-size: 1.8em;
+            border-radius: 5px;
+        }
+        #buttons{
+            text-align: center;
+        }
+        #container{
+           margin-left: 25%;
+           margin-right: 25%;
+        }
+    </style>
 </head>
 <body>
+    <div id="container">
     <h1>Every Pizza Place</h1>
     <form action="#" method="POST">
         <legend>Order Here</legend>
         <fieldset>
-            <h2>Diet (Delight) Pizza</h2>
+            <h2>Diet <em>(Delight)</em> Pizza</h2>
             <p>Available in wheat only, with sauce and part-skim cheese</p>
             <input name="Diet" id="pCheeseD" type="checkbox" />
             <label for="pCheeseD">Plain Cheese</label>
@@ -284,8 +331,13 @@
             <input for="email" type="email" required="required" placeholder="example@mail.com" maxlength="325"/>
             <label for="email">Email</label><br>
             <input id="address" type="text" />
-            <label for="address">Address</label>
+            <label for="address">Address</label><br>
+        <div id="buttons">
+            <button type="submit">Submit</button><br>
+            <button type="reset">Reset</button>
+        </div><!--buttons-->
         </fieldset>
     </form>
+    </div><!--container-->
 </body>
 </html>
