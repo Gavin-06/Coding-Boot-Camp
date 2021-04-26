@@ -8,20 +8,12 @@
     <style>
         #container{
             display: flex;
-            float: right;
         }
         #text{
             background-color: #F0D69E;
             border: 2px solid black;
             padding: 20px;
             margin-right: 15px;
-            order: 2;
-        }
-        h3{
-            text-align: end;
-        }
-        #images{
-            order: 1;
         }
     </style>
 </head>
@@ -58,22 +50,40 @@
 
         </div><!--text-->
         <div id="images">
-            <a><img src="images/1livingroom.jpg" alt="living room with white couch and tv on a small shelf and a window" /></a>
-            <a><img src="images/2diningroom.jpg" alt="dining room with breakfast bar and overhead cabinets" /></a>
-            <a><img src="images/3bathroom.jpg" alt="Bathroom with sliding shower door there is a cabniet mirror and another cabinet above the toilet" /></a>
-            <a><img src="images/4livingroom.jpg" alt="another angle of the living room "></a>
-            <a><img src="images/5hallway.jpg" alt=""></a>
-            <a><img src="images/6livingroom.jpg" alt=""></a>
-            <a><img src="images/7bedroom.jpg" alt=""></a>
-            <a><img src="images/8livingroom.jpg" alt=""></a>
-            <a><img src="images/9livingroom.jpg" alt=""></a>
-            <a><img src="images/10kitchen.jpg" alt=""></a>
-            <a><img src="images/11diningroomlivingroom.jpg" alt=""></a>
-            <a><img src="images/12bathroomduplicate.jpg" alt=""></a>
-            <a><img src="images/13washeranddryer.jpg" alt=""></a>
-            <a><img src="images/14bedroom.jpg" alt=""></a>
-
+            <a href="1livingroom.html"><img src="images/1livingroom.jpg" alt="living room with white couch and tv on a small shelf and a window" /></a>
+            <a href="2diningroom.html"><img src="images/2diningroom.jpg" alt="dining room with breakfast bar and overhead cabinets" /></a>
+            <a href="3bathroom.html"><img src="images/3bathroom.jpg" alt="Bathroom with sliding shower door there is a cabniet mirror and another cabinet above the toilet" /></a>
+            <a href="4livingroom.html"><img src="images/4livingroom.jpg" alt="another angle of the living room"></a>
+            <a href="5hallway.html"><img src="images/5hallway.jpg" alt="a hallway leading to the livinging room and kitchen"></a>
+            <a href="6livingroom.html"><img src="images/6livingroom.jpg" alt="other corner of the living room with study and two more windows."></a>
+            <a href="7bedroom.html"><img src="images/7bedroom.jpg" alt="bedroom with draws and a window"></a>
+            <a href="8livingroom.html"><img src="images/8livingroom.jpg" alt="another view of the living room from another angle showing the couch and the kitchen in the background"></a>
+            <a href="9livingroom.html"><img src="images/9livingroom.jpg" alt="a view of the kitchen witht he living room in the background"></a>
+            <a href="10kitchen.html"><img src="images/10kitchen.jpg" alt="a closeup of the kitchen with fridge and oven and avid counter space. There are cabinets lining across the top of the whole kitchen."></a>
+            <a href="11diningroomlivingroom.html"><img src="images/11diningroomlivingroom.jpg" alt="a view of the kitchen and living room from the corner study area"></a>
+            <a href="12bathroomduplicate.html"><img src="images/12bathroomduplicate.jpg" alt="another view of the bathroom"></a>
+            <a href="13washeranddryer.html"><img src="images/13washeranddryer.jpg" alt="washer and dryer on the side of the hallway"></a>
+            <a href="14bedroom.html"><img src="images/14bedroom.jpg" alt="another bedroom with side table and a window over the bed"></a>
         </div><!--images-->
+        <div id="form">
+            <form action="#" method="POST">
+                <legend>Information for tour. We will contact you with available days to get a tour</legend>
+                <fieldset>
+                    <label for="fName">First Name</label>
+                    <input id="fName" type="text" required="required" maxlength="24" placeholder="example name" />
+                    <label for="lName">Last name</label>
+                    <input id="lName" type="text" required="required" maxlength="50" placeholder="example name"/>
+                    <label for="email">Email</label>
+                    <input for="email" type="email" required="required" placeholder="example@mail.com" maxlength="325"/>
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="text" required="required" maxlength="16" placeholder="+1 000 000 0000" />
+                <div id="buttons">
+                    <button type="submit">Submit</button><br>
+                    <button type="reset">Reset</button>
+                </div><!--buttons-->
+                </fieldset>
+            </form>
+        </div><!--form-->
     </div><!--container-->
 </body>
 </html>
