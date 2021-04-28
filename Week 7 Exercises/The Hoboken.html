@@ -4,16 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat&display=swap" rel="stylesheet">
     <title>The Hoboken Washington Apartment</title>
     <style>
         #container{
             display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
         }
         #text{
             background-color: #F0D69E;
             border: 2px solid black;
             padding: 20px;
             margin-right: 15px;
+            height: fit-content;
+        }
+        #form{
+            height: fit-content;
+        }
+        #images{
+        }
+        h1{
+            font-family: 'Dosis', sans-serif;
+            font-size: 2.2em;
+        }
+        h3{
+            font-family: 'Dosis', sans-serif;
+            font-size: 1.65em;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+        }
+        li{
+            font-family: 'Montserrat', sans-serif;
+        }
+        img{
+            border: 2px solid black; 
+            border-radius: 10px;
+        }
+        fieldset{
+            border-color: black;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        label{
+            font-size: 1.25em;
+            font-family: 'Montserrat', sans-serif;
+        }
+        input{
+            font-size: 1.2em;
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            margin: 7px;
+        }
+        button{
+            font-family: 'Montserrat', sans-serif;
         }
     </style>
 </head>
@@ -47,7 +93,7 @@
                 </li>
                 <li>Total interior livable area: 700 sqft</li>
             </ul>
-
+            <p>If you would like to schedule a tour please fill out the form. We will contact you with available days to get a tour</p>
         </div><!--text-->
         <div id="images">
             <a href="1livingroom.html"><img src="images/1livingroom.jpg" alt="living room with white couch and tv on a small shelf and a window" /></a>
@@ -67,14 +113,13 @@
         </div><!--images-->
         <div id="form">
             <form action="#" method="POST">
-                <legend>Information for tour. We will contact you with available days to get a tour</legend>
                 <fieldset>
                     <label for="fName">First Name</label>
-                    <input id="fName" type="text" required="required" maxlength="24" placeholder="example name" />
+                    <input id="fName" type="text" required="required" maxlength="24" placeholder="example name" /><br>
                     <label for="lName">Last name</label>
-                    <input id="lName" type="text" required="required" maxlength="50" placeholder="example name"/>
+                    <input id="lName" type="text" required="required" maxlength="50" placeholder="example name"/><br>
                     <label for="email">Email</label>
-                    <input for="email" type="email" required="required" placeholder="example@mail.com" maxlength="325"/>
+                    <input id="email" type="email" required="required" placeholder="example@mail.com" maxlength="325"/><br>
                     <label for="phone">Phone Number</label>
                     <input id="phone" type="text" required="required" maxlength="16" placeholder="+1 000 000 0000" />
                 <div id="buttons">
