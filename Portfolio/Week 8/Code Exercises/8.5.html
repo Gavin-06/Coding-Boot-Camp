@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.5</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        //You can't change a constant because it will error out.
+        const width = 480;
+        const height = 640;
+        
+        //this width is causing the page to error out.
+
+        width = 720;
+
+        let out= width + " X " + height;
+
+        document.getElementById("output").innerHTML = out;
+        
+
+    </script>
+</body>
+</html>

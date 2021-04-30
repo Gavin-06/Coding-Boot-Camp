@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        label{
+            font-size: 1.25 em;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        input{
+            font-size: 1.25em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: tomato;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <legend>Check the airline scheule</legend><!--not required-->
+        <fieldset>
+            <p>Personal Informaiton</p>
+            <label for="fName">First Name</label>
+            <input id="fName" type="text" /><br>
+            <label for="lName">Last name</label>
+            <input id="lName" type="text" /><br>
+            <label for="email">Email</label>
+            <input for="email" type="email" />
+        </fieldset>
+        <fieldset>
+            <p>Travel Information</p>
+        </fieldset>
+
+    </form>
+</body>
+</html>

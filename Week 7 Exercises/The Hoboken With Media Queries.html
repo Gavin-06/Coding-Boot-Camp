@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat&display=swap" rel="stylesheet">
     <title>The Hoboken Washington Apartment</title>
     <style>
         #container{
             display: flex;
-            justify-content: space-evenly;
-            align-items: flex-start;
+            margin-right: 50px;
+            margin-left: 50px;
+            justify-content: center;
         }
         #text{
-            background-color: #F0D69E;
-            border: 2px solid black;
-            padding: 20px;
-            margin-right: 15px;
+            background-color: #A3823B;
+            padding: 50px;
+            margin-right: 40px;
             height: fit-content;
-        }
-        #form{
-            height: fit-content;
+            border-radius: 5px;
+            width: 800px;
         }
         #images{
+            width: min-content;
         }
         h1{
             font-family: 'Dosis', sans-serif;
@@ -40,13 +40,16 @@
             font-family: 'Montserrat', sans-serif;
         }
         img{
-            border: 2px solid black; 
+            margin-bottom: 10px;
+            border: 1px solid black; 
             border-radius: 10px;
         }
         fieldset{
-            border-color: black;
-            border-radius: 5px;
+            background-color: #F0D69E;
+            border: none;
+            border-radius: 4px;
             padding: 20px;
+            width: fit-content;
         }
         label{
             font-size: 1.25em;
@@ -55,12 +58,34 @@
         input{
             font-size: 1.2em;
             font-family: 'Montserrat', sans-serif;
-            color: black;
+            color:crimson;
             margin: 7px;
+            border-radius: 5px;
         }
         button{
             font-family: 'Montserrat', sans-serif;
+            margin: 10px;
+            width: 150px;
+            background-color:darkred ;
+            font-size: 1.5em;
+            border-color: black;
+            border-radius: 3px;
         }
+            @media only screan and (max-width: 870px){
+                #container{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                #text{
+                    background-color: #A3823B;
+                    padding: 20px;
+                    border-radius: 5px;
+                    width: 50%;
+                }
+                #images{
+                    width: 50%;
+                }
+            }
     </style>
 </head>
 <body>
@@ -94,7 +119,24 @@
                 <li>Total interior livable area: 700 sqft</li>
             </ul>
             <p>If you would like to schedule a tour please fill out the form. We will contact you with available days to get a tour</p>
-        </div><!--text-->
+        
+            <form action="#" method="POST">
+                <fieldset>
+                    <label for="fName">First Name</label>
+                    <input id="fName" type="text" required="required" maxlength="24" placeholder="example name" /><br>
+                    <label for="lName">Last name</label>
+                    <input id="lName" type="text" required="required" maxlength="50" placeholder="example name"/><br>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" required="required" placeholder="example@mail.com" maxlength="325"/><br>
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="text" required="required" maxlength="16" placeholder="+1 000 000 0000" />
+                <div id="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div><!--buttons-->
+                </fieldset>
+            </form>
+    </div><!--text-->
         <div id="images">
             <a href="1livingroom.html"><img src="images/1livingroom.jpg" alt="living room with white couch and tv on a small shelf and a window" /></a>
             <a href="2diningroom.html"><img src="images/2diningroom.jpg" alt="dining room with breakfast bar and overhead cabinets" /></a>
@@ -111,24 +153,7 @@
             <a href="13washeranddryer.html"><img src="images/13washeranddryer.jpg" alt="washer and dryer on the side of the hallway"></a>
             <a href="14bedroom.html"><img src="images/14bedroom.jpg" alt="another bedroom with side table and a window over the bed"></a>
         </div><!--images-->
-        <div id="form">
-            <form action="#" method="POST">
-                <fieldset>
-                    <label for="fName">First Name</label>
-                    <input id="fName" type="text" required="required" maxlength="24" placeholder="example name" /><br>
-                    <label for="lName">Last name</label>
-                    <input id="lName" type="text" required="required" maxlength="50" placeholder="example name"/><br>
-                    <label for="email">Email</label>
-                    <input id="email" type="email" required="required" placeholder="example@mail.com" maxlength="325"/><br>
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="text" required="required" maxlength="16" placeholder="+1 000 000 0000" />
-                <div id="buttons">
-                    <button type="submit">Submit</button><br>
-                    <button type="reset">Reset</button>
-                </div><!--buttons-->
-                </fieldset>
-            </form>
-        </div><!--form-->
+        
     </div><!--container-->
 </body>
 </html>

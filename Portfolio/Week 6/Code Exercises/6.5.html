@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        label{
+            font-size: 1.25 em;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        input{
+            font-size: 1.25em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: tomato;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <legend>Check the airline scheule</legend><!--not required-->
+        <fieldset>
+            <p>Personal Informaiton</p>
+            <label for="fName">First Name</label>
+            <input id="fName" type="text" /><br>
+            <label for="lName">Last name</label>
+            <input id="lName" type="text" /><br>
+            <label for="email">Email</label>
+            <input for="email" type="email" />
+        </fieldset>
+        <fieldset>
+            <p>Travel Information</p>
+            <fieldset>
+                <p>Departure</p>
+                <label for="dDate">Departure Date</label>
+                <input id="dDate" type="date" /><br>
+                <label for="dTime">Departure Time</label>
+                <input id="dTime" type="time" />
+            </fieldset>
+            <fieldset>
+                <p>Return</p>
+                <label for="dDate">Return Date</label>
+                <input id="dDate" type="date" /><br>
+                <label for="dTime">Return Time</label>
+                <input id="dTime" type="time" />
+            </fieldset>
+            <div>
+                <p>Class of Flight</p>
+                <input type="radio" id="First" name="class" value="First" />
+                <label for="First">First Class</label>
+                <input type="radio" id="Business" name="class" value="Business" />
+                <label for="Business">Buissiness Class</label>
+                <input type="radio" id="Economy" name="class" value="Economy" />
+                <label for="Economy">Economy Class</label>
+
+                <p>Airlines to Search</p>
+                <input type="checkbox" id="American" name="Airlines" value="American" />
+                <label for="American">American</label>
+                <input type="checkbox" id="Delta" name="Airlines" value="Delta" />
+                <label for="Delta">Delta</label>
+                <input type="checkbox" id="JetBlue" name="Airlines" value="JetBlue" />
+                <label for="JetBlue">JetBlue</label>
+                <input type="checkbox" id="United" name="Airlines" value="United" />
+                <label for="United">United</label>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.4</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        //this is the wrong way to use variables, it workes but isn't correct:
+        var name = "Mark Lassoff"; 
+        var age = "47";
+
+        //Current Standard
+        let playerScore = 10000; //Number
+        let playerName = "Phil Smith"; //String
+        let playing = false; //Boolean (true or false)
+
+        playerScore= 15000;
+
+        let outputString = playerName + " Score: " + playerScore;
+        document.getElementById("output").innerHTML = outputString;
+
+    </script>
+
+</body>
+</html>

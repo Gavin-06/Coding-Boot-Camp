@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.8</title>
+</head>
+<body>
+    <div id="out"></div>
+    <script>
+        let x = 12;
+        let y = 13;
+
+        let sum = x + y; //Addition
+        let difference = x - y; //Subtraction
+        let multiple = x * y; //Multiplicaiton
+        let division = x / y; //Division
+        let mod = 18 % 4;
+        let exp = (18 - 5) * 2; //PEMDAS (parentheses, exponents,multiplication, division,  addition, subtraction)
+
+        let output = x + " + " + y + " = " + sum + "<br/>";
+        output += x + " - " + y + " = " + difference + "<br/>";
+        output += x + " * " + y + " = " + multiple + "<br/>";
+        output += x + " / " + y + " = " + division + "<br/>";
+        output += "Mod Result:" + mod
+        output += "<br/>Order of ops: " + exp;
+
+        document.getElementById("out").innerHTML = output;
+
+    </script>
+</body>
+</html>

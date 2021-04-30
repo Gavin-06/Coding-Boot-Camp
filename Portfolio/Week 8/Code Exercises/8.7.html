@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.7</title>
+</head>
+<body>
+    <label for ="funnyWord">Funny Word</label>
+    <input type="text" id="funnyWord" /><br>
+    <label for ="anyNumber">Any Number</label>
+    <input type="number" id="anyNumber" />
+    <button id="btnProcess">Process</button>
+    <script>
+        document.getElementById("btnProcess").addEventListener('click', function(){
+            let word = document.getElementById("funnyWord").value;
+            let myNumber = document.getElementById("anyNumber").value;
+            let output = "Your Funny Word: " + word + " Your Number: " + myNumber;
+            alert(output);
+        });
+    </script>
+</body>
+</html>
