@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.7 Redo</title>
+</head>
+<body>
+    <label for="Adjective1">Type an adjective</label>
+    <input id="Adjective1" type="text" /><br>
+    <label for="pluralNoun">Type a plural noun</label>
+    <input id="pluralNoun" type="text" />
+
+    <button id="btnProcess">Process</button>
+
+    <script>
+        document.getElementById("btnProcess").addEventListener('click', function(){
+            let Adjective1 = document.getElementById("Adjective1").value;
+            let pluralNoun = document.getElementById("pluralNoun").value;
+            let output = "Your adjective: " + Adjective1 + " your plural noun: " + pluralNoun;
+
+            alert(output);
+        });
+        
+    </script>
+</body>
+</html>

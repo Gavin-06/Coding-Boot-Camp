@@ -20,6 +20,9 @@
             font-size: 2em;
             line-height: 1.4em; 
         }
+        input{
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -45,37 +48,29 @@
             <input id="adverb2" type="text"><br/>
             <label for="adjective2">Type an adjective</label>
             <input id="adjective2" type="text"><br/>
-        </div>
+
             <button id="btnProcess">Process</button>
-        
-            <p>Today, My fabulous camp group went to a (an) <output id="adjective1"></output> amusement park. It was a fun park with lots of cool <output id="pluralNoun"></output> and enjoyable play structures. When we got there,  my kind counselor shouted loudly, "Everybody off the <output id="noun"></output>." We all pushed out in a terrible hurry. My counselor handed out yellow tickets, and we sucrried in. I was so exited! I couldn't figure out what exciting thing to do first. I saw a scary roller coaster I really liked so, I <output id="adverb1"></output> ran over to get in the long line that had about <output id="number"></output> people in it. When I finally got on the roller coaster I was <output id="ptVerb1"></output>. In fact I was so nervous my two knees were knocking together. This was the <output id="estAdjective"></output> ride I had ever been on! In about two minuetes I heard the crank and grinding of the gears. That's when the ride begain! When I got to the bottom, I was a little <output id="ptVerb2"></output> but I was proud of myself. The rest of the day went <output id="adverb2"></output>. It was a(n) <output id="adjective2"></output> day at the fun park.</p>
-    </div>
+        </div><!--form-->
+    </div><!--container-->
     <script>
-        let adjective1 = prompt("Type an adjective");
-        let pluralNoun = prompt("Type a plural noun");
-        let noun = prompt("Type a noun");
-        let adverb1 = prompt("Type an adverb");
-        let number = prompt("Type a number");
-        let ptVerb1 = prompt("Type a past tense verb");
-        let estAdjective = prompt("Type an adjective ending in est");
-        let ptVerb2 = prompt("Type a verb");
-        let adverb2 = prompt("Type an adverb");
-        let adjective2 = prompt("Type an adjective");
-
         document.getElementById("btnProcess").addEventListener('click', function(){
-            let . = document.getElementById("").value;
-        })
+            let adjective1 = document.getElementById("adjective1").value;
+            let pluralNoun = document.getElementById("pluralNoun").value;
+            let noun = document.getElementById("noun").value;
+            let adverb1 = document.getElementById("adverb1").value;
+            let number = document.getElementById("number").value;
+            let ptVerb1 = document.getElementById("ptVerb1").value;
+            let estAdjective = document.getElementById("estAdjective").value;
+            let ptVerb2 = document.getElementById("ptVerb2").value;
+            let adverb2 = document.getElementById("adverb2").value;
+            let adjective2 = document.getElementById("adjective2").value;
 
-        document.getElementById("adjective1").innerHTML = adjective1.bold();
-        document.getElementById("pluralNoun").innerHTML = pluralNoun.bold();
-        document.getElementById("noun").innerHTML = noun.bold();
-        document.getElementById("adverb1").innerHTML = adverb1.bold();
-        document.getElementById("number").innerHTML = number.bold();
-        document.getElementById("ptVerb1").innerHTML = ptVerb1.bold();
-        document.getElementById("estAdjective").innerHTML = estAdjective.bold();
-        document.getElementById("ptVerb2").innerHTML = ptVerb2.bold();
-        document.getElementById("adverb2").innerHTML = adverb2.bold();
-        document.getElementById("adjective2").innerHTML = adjective2.bold();
+
+            let output = "Today, my fabulous camp group went to a (an) " + adjective1 + " amusement park. It was a fun park with lots of cool " + pluralNoun + " and enjoyable play structures. When we got there,  my kind counselor shouted loudly, 'Everybody off the " + noun + ". We all pushed out in a terrible hurry. My counselor handed out yellow tickets, and we sucrried in. I was so exited! I couldn't figure out what exciting thing to do first. I saw a scary roller coaster I really liked so, I " + adverb1 + " ran over to get in the long line that had about " + number + " people in it. When I finally got on the roller coaster I was " + ptVerb1 + ". In fact I was so nervous my two knees were knocking together. This was the " + estAdjective + " ride I had ever been on! In about two minuetes I heard the crank and grinding of the gears. That's when the ride begain! When I got to the bottom, I was a little " + ptVerb2 + " but I was proud of myself. The rest of the day went " + adverb2 + ". It was a(n) " + adjective2 + " day at the fun park.";
+
+            alert(output);
+        });
+        
     </script>
 </body>
 </html>
