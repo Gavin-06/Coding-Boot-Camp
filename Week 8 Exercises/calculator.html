@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #out{
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="out"></div>
+    <script>
+        let x = prompt("type first number");
+        let y = prompt("type second number");
+
+        let sum = parseInt(x) + parseInt(y); //Addition
+        let difference = x - y; //Subtraction
+        let multiple = x * y; //Multiplicaiton
+        let division = x / y; //Division
+
+        let output = x + " + " + y + " = " + sum + "<br/>"; //Addition
+        output += x + " - " + y + " = " + difference + "<br/>"; //Subtraction
+        output += x + " * " + y + " = " + multiple + "<br/>"; //Multiplicaiton
+        output += x + " / " + y + " = " + division + "<br/>"; //Division
+
+        document.getElementById("out").innerHTML = output;
+
+    </script>
+</body>
+</html>
