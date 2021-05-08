@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.4</title>
+</head>
+<body>
+    <div id="out"></div>
+
+    <script>
+        let output = ''; 
+        let x = 100;
+        //this loop will continue WHILE this statement is true
+        //while(x < 11){
+        //    output += x + "<br/>";
+        //    x++; //x=x+1
+        //}
+            while(x > -1) {
+                output += x + "<br/>";
+                x = x -5;
+            }
+
+        document.getElementById("out").innerHTML = output;
+    </script>
+</body>
+</html>

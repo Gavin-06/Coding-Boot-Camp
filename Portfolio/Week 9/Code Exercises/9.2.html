@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.2</title>
+</head>
+<body>
+    <div id="out">
+
+    </div>
+
+    <script>
+        let numericalGrade = prompt("Enter numerical grade: ");
+        let letterGrade = '';
+        
+        if(numericalGrade > 90){
+            letterGrad = 'A';
+        } else if(numericalGrade > 80){
+            letterGrade = 'B';
+        } else if (numericalGrade > 70){
+            letterGrade = 'C';
+        } else if (numericalGrade > 60){
+            letterGrade = 'D';
+        } else {
+            letterGrade = 'F'
+        }
+
+        document.getElementById("out").innerHTML = "<h1>" + letterGrade + "</h1>";
+    </script>
+</body>
+</html>

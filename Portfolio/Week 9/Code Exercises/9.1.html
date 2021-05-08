@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.1</title>
+</head>
+<body>
+    <div id="out"></div>
+
+    <script>
+        let age = 21;
+        let citizen = true; 
+
+        //to say "and" you put &&
+        //Logical Operators && and || is or (|| is called pipe pipe)
+
+        if(age>=18 && citizen){
+            //If true this code will run
+            document.getElementById("out").innerHTML = "<h1>You are eligible to vote!</h1>";
+        } else{
+            //If false this code will run
+            document.getElementById("out").innerHTML = "<h1>You are NOT eligible to vote.</h1>"
+        }
+    </script>
+
+</body>
+</html>
