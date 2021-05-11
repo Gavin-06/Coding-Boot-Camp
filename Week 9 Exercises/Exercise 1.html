@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive or Negative</title>
+</head>
+<body>
+    <div id="out"></div>
+
+    <script>
+        let number = prompt("Enter a number");
+        let output = '';
+
+        if(number >= 0){
+            output = 'Your number is POSITIVE.'
+        } else if(number <= -1){
+            output = 'Your number is NEGATIVE.'
+        } else {
+            output = 'Please make sure you entered a number'
+        }
+
+        document.getElementById("out").innerHTML = output;
+
+    </script>
+
+</body>
+</html>

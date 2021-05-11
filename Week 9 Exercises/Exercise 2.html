@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest and Smallest</title>
+</head>
+<body>
+    <div id="out"></div>
+
+    <script>
+        let number1 = prompt("Enter a number");
+        let number2 = prompt("Enter a second, different number");
+        let number3 = prompt("Enter a third, different number");
+        let smallest = '';
+        let greatest = '';
+        
+        if(number1 > number2 && number1 > number3 && number2 < number3){
+            greatest = number1;
+            smallest = number2;
+        }
+
+        let output = "Smallest number: " + smallest + " Greatest number: " + greatest;
+        document.getElementById("out").innerHTML = output;
+
+    </script>
+</body>
+</html>
