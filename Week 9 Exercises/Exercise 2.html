@@ -8,22 +8,42 @@
 </head>
 <body>
     <div id="out"></div>
-
+    
     <script>
-        let number1 = prompt("Enter a number");
-        let number2 = prompt("Enter a second, different number");
-        let number3 = prompt("Enter a third, different number");
-        let smallest = '';
-        let greatest = '';
-        
-        if(number1 > number2 && number1 > number3 && number2 < number3){
-            greatest = number1;
-            smallest = number2;
+        let x = prompt("Enter a number: ");
+        let y = prompt("Enter a second different number: ");
+        let z = prompt("Enter a third different number: ");
+        let output = '';
+
+        if(parseInt(x) > parseInt(y) && parseInt(x) > parseInt(z) && parseInt(y) > parseInt(z)){
+
+            output = "Outcome: 1 | Greatest: " + x + " Least: " + z;
+
+        } else if(parseInt(x) > parseInt(y) && parseInt(x) > parseInt(z) && parseInt(z) > parseInt(y)){
+
+            output = "Outcome: 2 | Greatest: " + x + " Least: " + y;
+
+        } else if(parseInt(y) > parseInt(x) && parseInt(y) > parseInt(z) && parseInt(z) > parseInt(x)){
+
+            output = "Outcome: 3 | Greatest: " + y + " Least: " + x;
+
+        } else if(parseInt(y) > parseInt(x) && parseInt(y) > parseInt(z) && parseInt(x) > parseInt(z)){
+
+            output = "Outcome: 4 | Greatest: " + y + " Least: " + z;
+
+        } else if(parseInt(z) > parseInt(x) && parseInt(z) > parseInt(y) && parseInt(x) > parseInt(y)){
+
+            output = "Outcome: 5 | Greatest: " + z + " Least: " + y;
+
+        } else if(parseInt(z) > parseInt(x) && parseInt(z) > parseInt(y) && parseInt(y) > parseInt(x)){
+
+            output = "Outcome: 6 | Greatest: " + z + " Least: " + x;
+
+        } else{
+            output = "Error, please try again. Make sure there are only numbers and the numbers are not repeating."
         }
 
-        let output = "Smallest number: " + smallest + " Greatest number: " + greatest;
         document.getElementById("out").innerHTML = output;
-
     </script>
 </body>
 </html>
