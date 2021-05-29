@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.3</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        let grades = [89, 93, 76, 88, 89, 41, 100, 88, 75]
+        document.getElementById('output').innerHTML = grades.toString();
+        console.log(grades);
+        // console.log(grades.toString());
+        console.log(grades.join(" * "));
+        // grades.pop();
+        // grades.pop();
+        // grades.push(81);
+        // grades.push(98);
+        // console.log(grades);
+        grades.shift();
+        console.log(grades);
+        console.log(grades.sort());
+        let workers = ["Mark", "Wendy", "Leo", "Odin"];
+        console.log(workers.sort());
+
+    </script>
+</body>
+</html>

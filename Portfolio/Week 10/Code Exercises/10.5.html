@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.5</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        let grades = [89, 93, 76, 88, 89, 41, 100, 88, 75, 67, 82, 91, 100, 55, 78, 91]
+        let gradeTotal = 0;
+        grades.forEach(gradesFunction);
+
+        function gradesFunction(item, index){
+            gradeTotal += item;
+        }
+        
+        document.getElementById("output").innerHTML = gradeTotal/grades.length;
+
+
+        // for(let x = 0; x < grades.length; x++){
+        //     gradeTotal = gradeTotal + grades[x];
+        //     //gradesTotal += grades[x];
+        // }
+
+        // let average = gradeTotal / grades.length;
+        // document.getElementById('output').innerHTML = "<h1>" + average + "</h1>";
+    </script>
+</body>
+</html>

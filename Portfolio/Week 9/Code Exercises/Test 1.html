@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loop</title>
+    <title>Tests</title>
 </head>
 <body>
     <div id="out"></div>
@@ -12,17 +12,17 @@
     <script>
         let i = '';
         let j = '';
-        let k = '';
         let output = '';
         for(i = 1; i <= 9; i++){
             for(j = 1; j <= i; j++){
-                output += j;
+              output += j;  
             }
+            for(k = 9; k >= 1; k--){
+                output += k;
+            }   
             output += "<br/>";
         }
-        for(k = 9; k >= 0; k + -1){
-                output += k;
-            }
+        
         document.getElementById('out').innerHTML = output;
 
     </script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.2</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        // let teams = ["Yankees", "Knicks", "Nets", "Islanders", "Phillies", "Dodgers"];
+        // let out = "";
+        // for(let x = 0; x < teams.length; x++){
+        //     out += "<p>" + teams[x] +"</p>";
+        // }
+
+        // document.getElementById("output").innerHTML = out;
+
+        let grades = [89, 93, 76, 88, 89, 41, 100, 88, 75]
+        let gradeTotal = 0;
+        for(let x = 0; x < grades.length; x++){
+            gradeTotal = gradeTotal + grades[x];
+            //gradesTotal += grades[x];
+        }
+
+        let average = gradeTotal / grades.length;
+        document.getElementById('output').innerHTML = "<h1>" + average + "</h1>";
+    </script>
+</body>
+</html>
