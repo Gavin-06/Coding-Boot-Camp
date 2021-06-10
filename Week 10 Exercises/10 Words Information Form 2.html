@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10 Words</title>
+    <title>2.0 10 Words</title>
 </head>
 <body>
     <div id="Container">
@@ -31,7 +31,6 @@
             <label for="word10">Word 10</label>
             <input id="word10" type="text"><br/>
 
-            <button type="reset">Reset</button>
             <button id="ProcessBtn">Process</button> 
 
         <div id="output"></div>
@@ -40,7 +39,19 @@
         <script>
             document.getElementById('ProcessBtn').addEventListener('click', function(){
                 let word01 = document.getElementById("word1").value;
-                let out = "First word: " + word01;
+                let word02 = document.getElementById("word2").value;
+                let word03 = document.getElementById("word3").value;
+                let word04 = document.getElementById("word4").value;
+                let word05 = document.getElementById("word5").value;
+                let word06 = document.getElementById("word6").value;
+                let word07 = document.getElementById("word7").value;
+                let word08 = document.getElementById("word8").value;
+                let word09 = document.getElementById("word9").value;
+                let word10 = document.getElementById("word10").value;
+
+                let tenWords = [document.getElementById("word1").value, document.getElementById("word2").value;]
+
+                let out = word01 + " " + word02 + " " + word03 + " " + word04 + " " + word05 + " " + word06 + " " + word07 + " " + word08 + " " + word09 + " " + word10 + ".";
                 document.getElementById("output").innerHTML = out;
             });
         </script>
