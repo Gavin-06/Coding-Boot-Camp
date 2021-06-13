@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div id="output"></div>
+
+        <script>
+            // function getVowels(str) {
+            //     let word = prompt("Enter a word: ");
+            //     let numVowels = str.match(/[aeiou]/gi);
+            //     return numVowels === null ? 0 : m.length;
+            //     let vowelsOut = "";
+            //     document.getElementById("output").innerHTML = out;
+            // }
+            // let word = ["testing"];
+            // const countVowels = str => Array.from(str)
+            //     .filter(letter => 'aeiou'.includes(letter)).length;
+            
+            // let out = " ";
+            // document.getElementById("output").innerHTML = out;
+            // console.log(countVowels('abcdefghijklmnopqrstuvwxyz')); 
+            // console.log(countVowels('test')); 
+            // console.log(countVowels('ddd')); 
+            
+            
+            // function countVowels() {
+            //     let word = ["Grey"];
+            //     let vowelCount = word.match(/[aeiou]/gi || []).length;
+            //     document.getElementById("output").innerHTML = word.match(/[aeiou]/i);
+            // }
+
+            // let str = "Grey";
+            // function getVowels(str) {
+            //     let m = str.match(/[aeiou]/gi);
+            //     return m === null ? 0 : m.length;
+            // }
+
+            let word = "Grey";
+            let vowelCount = "";
+            for(let i = 0; i <= word.length - 1; i++) {
+                if ('aeiou'.includes(word[i].toLowerCase())){
+                vowelCount += 1;
+                }
+            }
+            let out = word + " | " + "Number of vowels: " + vowelCount
+            document.getElementById("output").innerHTML = out;
+        </script>
+</body>
+</html>

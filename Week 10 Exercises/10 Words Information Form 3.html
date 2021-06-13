@@ -39,12 +39,30 @@
         <script>
             document.getElementById('ProcessBtn').addEventListener('click', function(){
                 let tenWords = [document.getElementById("word1").value, document.getElementById("word2").value, document.getElementById("word3").value, document.getElementById("word4").value, document.getElementById("word5").value, document.getElementById("word6").value, document.getElementById("word7").value, document.getElementById("word8").value, document.getElementById("word9").value, document.getElementById("word10").value]
+                // let word1 = document.getElementById("word1").value;
+                // let word2 = document.getElementById("word2").value;
+                // let word3 = document.getElementById("word3").value;
+                // let word4 = document.getElementById("word4").value;
+                // let word5 = document.getElementById("word5").value;
+                // let word6 = document.getElementById("word6").value;
+                // let word7 = document.getElementById("word7").value;
+                // let word8 = document.getElementById("word8").value;
+                // let word9 = document.getElementById("word9").value;
+                // let word10 = document.getElementById("word10").value;
                 let out = "";
+                let vowelCount = 0;
+                for(let i = 0; i <= tenWords[i].length; i++) {
+                    if (tenWords[i].includes('a')){
+                            vowelCount += 1;
+                            
+                    }
+                }
                 for(x = 0; x < tenWords.length; x++){
-                    out += tenWords[x] + " | Length: " + tenWords[x].length + " | Number of vowels: " + "<br/>";
+                    
+                    out += tenWords[x] + " | Length: " + tenWords[x].length + " | Number of vowels: " + vowelCount + "<br/>";
+                    // out += vowelCount
                     
                 };
-                //let out = word01 + " " + word02 + " " + word03 + " " + word04 + " " + word05 + " " + word06 + " " + word07 + " " + word08 + " " + word09 + " " + word10 + ".";
                 document.getElementById("output").innerHTML = out;
             });
         </script>
