@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius to Farenheit</title>
+</head>
+<body>
+    <div id="container">
+        <div id="output"></div>
+        <label for="temp">Enter a celsius tempurature</label>
+        <input id="temp" type="number"><br/>
+        <button id="processBtn">Process</button>
+
+        <script>
+            document.getElementById("processBtn").addEventListener('click',function(){
+                
+                let cTemp = 0;
+                let vOne = 1.8;
+                let vTwo = 32;
+
+                let FTC = function(cTemp, vOne, vTwo){
+                    let fTemp = cTemp * vOne + vTwo;
+                    return fTemp;
+                }
+
+                let result = FTC(9,1.8,32);
+                document.getElementById("ouput").innerHTML = result;
+                // let FTC = function(){
+                //     let fTemp = 23 * 1.8 + 32;
+                //     document.getElementById("output").innerHTML = fTemp;
+                    
+                // }
+
+                // FTC(30);
+                // document.getElementById("output").innerHTML = cTemp;
+
+
+            });
+
+        </script>
+    </div><!--container-->
+
+
+</body>
+</html>

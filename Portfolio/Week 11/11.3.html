@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11.3</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        let area = function(length, width){
+            let theArea = length * width;
+            return theArea;
+        }
+
+        let volume = function(length, width, depth){
+            let theVolume = length * width * depth;
+            return theVolume;
+        }
+
+        let result = area(15,20)
+        document.getElementById("output").innerHTML = "<h1>Result: " + result;
+
+        // let volumeResult = "The volume of the figure is " + volume(5,6,9) + ".";
+        // document.getElementById("output").innerHTML = volumeResult;
+    </script>
+</body>
+</html>
